@@ -6,7 +6,7 @@
 }
 
 .body-snake {
-  background-image: url('background.jpg');
+  background-image: image-url('background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Audiowide', cursive;
@@ -48,7 +48,7 @@ html {
 }
 
 .snake, .snake-head, .apple {
-  background-image: url('zombie-sprite.jpg');
+  background-image: image-url('zombie-sprite.jpg');
   background-size: 250px 160px;
   background-repeat: no-repeat;
 }
