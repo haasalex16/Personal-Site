@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/snake.css">
+    <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="assets/javascripts/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="assets/javascripts/snake.js"></script>
+    <script type="text/javascript" src="assets/javascripts/snake-view.js"></script>
+  </head>
+  <body class="body-snake">
+
+    <section class="game-container group">
+      <figure class="game-board"></figure>
+      <!-- <section class='scores'>
+        <ul class="score-list">
+          Recent Scores
+        </ul>
+      </section> -->
+    </section>
+    <script>
+    (function() {
+      new SnakeGame.View($(".game-board"));
+    })();
+    </script>
+  </body>
+</html>
