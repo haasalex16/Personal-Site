@@ -15,3 +15,8 @@ Rails.application.config.assets.precompile += %w( skel.min.js )
 Rails.application.config.assets.precompile += %w( util.js )
 Rails.application.config.assets.precompile += %w( ie/respond.min.js )
 Rails.application.config.assets.precompile += %w( main.js )
+
+Rails.application.config.assets.precompile += %w( snake.css )
+Rails.application.config.assets.precompile += %w( jquery-1.9.1.js )
+Rails.application.config.assets.precompile += %w( snake.js )
+Rails.application.config.assets.precompile += %w( snake-view.js )
