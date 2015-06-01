@@ -1,4 +1,5 @@
-== Alex Haas Portfolio
+Alex Haas Portfolio
+===================
 
 [LIVE] (http://www.alexchaas.com/)
 
