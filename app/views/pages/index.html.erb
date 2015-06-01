@@ -21,22 +21,22 @@
         </p>
         <ul class="actions">
           <li>
-            <img class="skill-logos" src="assets/ruby_logo.png" alt="" />
+            <img class="skill-logos" src="<%= asset_path('ruby_logo.png')%>" alt="" />
           </li>
           <li>
-            <img class="skill-logos" src="assets/rails.jpg" alt="" />
+            <img class="skill-logos" src="<%= asset_path('rails.jpg') %>" alt="" />
           </li>
           <li>
-            <img class="skill-logos" src="assets/backbone.png" alt="" />
+            <img class="skill-logos" src="<%= asset_path('backbone.png') %>" alt="" />
           </li>
           <li>
-            <img class="skill-logos" src="assets/jquery.png" alt="" />
+            <img class="skill-logos" src="<%= asset_path('jquery.png') %>" alt="" />
           </li>
           <li>
-            <img class="skill-logos" src="assets/HTML5_Logo_512.png" alt="" />
+            <img class="skill-logos" src="<%= asset_path('HTML5_Logo_512.png') %>" alt="" />
           </li>
           <li>
-            <img class="skill-logos" src="assets/git.png" alt="" />
+            <img class="skill-logos" src="<%= asset_path('git.png') %>" alt="" />
           </li>
           <li><a href="https://docs.google.com/document/d/12eznzymx7AURnrAFycCeE0eBMdBKFS4WvSQhjRHv68o/edit" class="button">Résumé</a></li>
         </ul>
@@ -47,7 +47,7 @@
         <h2>Recent Work</h2>
         <div class="row">
           <article class="6u 12u$(xsmall) work-item">
-            <a href="assets/fulls/EE.png" class="image fit thumb"><img src="assets/thumbs/EEthumb.png" alt="" /></a>
+            <a href="<%= asset_path('fulls/EE.png') %>" class="image fit thumb"><img src="<%= asset_path('thumbs/EEthumb.png') %>" alt="" /></a>
             <h3><a href="http://www.eclecticear.us/session/new">Eclectic Ear</a></h3>
             <p><strong>Music sharing app inspired by SoundCloud</strong></p>
             <p>Built with Backbone utilizing a RESTful JSON Ruby on Rails API.
@@ -56,13 +56,13 @@ Implements search over multiple different models by leveraging a polymorphic ass
 </p>
           </article>
           <article class="6u$ 12u$(xsmall) work-item">
-            <a href="assets/fulls/zombie.png" class="image fit thumb"><img src="assets/thumbs/zombiethumb.png" alt="" /></a>
+            <a href="<%= asset_path('fulls/zombie.png')%>" class="image fit thumb"><img src="<%= asset_path('thumbs/zombiethumb.png')%>" alt="" /></a>
             <h3> <a href="<%= arcade_url %>">Zombie Dinner</a></h3>
             <p><strong>Snake inspired game built for the browser</strong></p>
             <p>Utilizes CSS Sprites to optimize page load</p>
           </article>
           <article class="6u 12u$(xsmall) work-item">
-            <a href="assets/fulls/chess.png" class="image fit thumb"><img src="assets/thumbs/chessthumb.png" alt="" /></a>
+            <a href="<%= asset_path('fulls/chess.png')%>" class="image fit thumb"><img src="<%= asset_path('thumbs/chessthumb.png')%>" alt="" /></a>
             <h3>Chess.rb</h3>
             <p><strong>Game built in Ruby to be played in the terminal</strong></p>
             <p>Utilizes class inheritance to DRY code for various piece types
