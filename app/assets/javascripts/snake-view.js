@@ -47,9 +47,9 @@
 
   View.prototype.tryAgain = function () {
     this.$el.append("<section class='retry'>Try Again?</section>");
-    if (this.board.score > this.bestScore) {
-      this.bestScore = this.board.score;
-    }
+    // if (this.board.score > this.bestScore) {
+    //   this.bestScore = this.board.score;
+    // }
     clearInterval(this.game);
     $(".retry").on('click', function() {
       this.board = new SnakeGame.Board();
@@ -136,7 +136,9 @@
         dir = "N";
         break;
       case space:
-        if (this.paused) {
+        if (this.board.snake.gameOver) {
+          $( ".retry" ).trigger( "click" );
+        } else if (this.paused) {
           this.resume();
           this.paused = false;
         } else {
@@ -145,7 +147,7 @@
         }
         break;
     }
-    if (!this.board.snake.isOpposite(dir) && !this.board.snake.turn) {
+    if (!this.board.snake.turn && !this.paused && dir && !this.board.snake.isOpposite(dir)) {
       this.board.snake.dir = dir;
       this.board.snake.turn = true
     }
